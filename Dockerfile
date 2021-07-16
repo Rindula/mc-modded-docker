@@ -13,6 +13,7 @@ RUN rm -f /minecraft/minecraft-server-installer.jar.log
 RUN mv /minecraft/forge-${FORGE_VERSION}.jar /minecraft/forge-server.jar
 RUN java -jar /minecraft/forge-server.jar --initSettings
 RUN echo "eula=true" > eula.txt
+COPY ./ops.json /minecraft/ops.json
 
 EXPOSE 25565
 EXPOSE 25566

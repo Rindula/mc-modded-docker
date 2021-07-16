@@ -40,6 +40,6 @@ ADD https://media.forgecdn.net/files/3351/933/refinedstorage-1.9.13.jar /minecra
 ADD https://media.forgecdn.net/files/3383/214/jei-1.16.5-7.7.1.110.jar /minecraft/mods
 
 # ENTRYPOINT [ "bash" ]
-ENTRYPOINT [ "java", "-jar", "/minecraft/forge-server.jar", "--universe", "/worlds", "--nogui", "--forceUpgrade", "--eraseCache", "-Xmx6G", "-Xms3G" ]
+ENTRYPOINT [ "java", "-Xmx6G", "-Xms3G", "-jar", "/minecraft/forge-server.jar", "--universe", "/worlds", "--nogui", "--forceUpgrade", "--eraseCache" ]
 
 # docker build -t mc-modded . && docker run -v ./worlds:/worlds -p 25565:25565 -it --rm --name mc-modded mc-modded

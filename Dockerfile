@@ -34,11 +34,15 @@ ADD https://media.forgecdn.net/files/3332/276/Waystones_1.16.5-7.6.2.jar /minecr
 
 ## Install Refined Storage
 
-ADD https://media.forgecdn.net/files/3351/933/refinedstorage-1.9.13.jar /minecraft/mods
+ADD https://media.forgecdn.net/files/3351/933/refinedstorage-1.9.13.jar /minecraft/mods/
 
 ## Install JEI
 
-ADD https://media.forgecdn.net/files/3383/214/jei-1.16.5-7.7.1.110.jar /minecraft/mods
+ADD https://media.forgecdn.net/files/3383/214/jei-1.16.5-7.7.1.110.jar /minecraft/mods/
+
+## Install Storage Drawers
+
+ADD https://media.forgecdn.net/files/3180/569/StorageDrawers-1.16.3-8.2.2.jar /minecraft/mods/
 
 # ENTRYPOINT [ "bash" ]
 ENTRYPOINT [ "java", "-Xmx6G", "-Xms3G", "-jar", "/minecraft/forge-server.jar", "--universe", "/worlds", "--nogui", "--forceUpgrade", "--eraseCache" ]

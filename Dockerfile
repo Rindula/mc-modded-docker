@@ -53,6 +53,6 @@ ADD https://media.forgecdn.net/files/3311/352/cloth-config-4.11.26-forge.jar /mi
 ADD https://media.forgecdn.net/files/3237/39/ftb-gui-library-1605.2.1.41-forge.jar /minecraft/mods/
 
 # ENTRYPOINT [ "bash" ]
-ENTRYPOINT [ "java", "-Xmx6G", "-Xms3G", "-jar", "/minecraft/forge-server.jar", "--universe", "/worlds", "--nogui", "--forceUpgrade", "--eraseCache" ]
+ENTRYPOINT [ "java", "-Xmx6G", "-Xms6G", "-jar", "/minecraft/forge-server.jar", "--universe", "/worlds", "--nogui", "--forceUpgrade", "--eraseCache" ]
 
 # docker build -t mc-modded . && docker run -v ./worlds:/worlds -p 25565:25565 -it --rm --name mc-modded mc-modded

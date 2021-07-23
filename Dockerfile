@@ -44,6 +44,14 @@ ADD https://media.forgecdn.net/files/3383/214/jei-1.16.5-7.7.1.110.jar /minecraf
 
 ADD https://media.forgecdn.net/files/3180/569/StorageDrawers-1.16.3-8.2.2.jar /minecraft/mods/
 
+## Install FTB Utilities and Libraries
+
+ADD https://media.forgecdn.net/files/3248/884/ftb-chunks-1605.2.3-build.75.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3337/104/ftb-ultimine-forge-1605.2.2-build.4.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3385/660/architectury-1.20.28-forge.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3311/352/cloth-config-4.11.26-forge.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3237/39/ftb-gui-library-1605.2.1.41-forge.jar /minecraft/mods/
+
 # ENTRYPOINT [ "bash" ]
 ENTRYPOINT [ "java", "-Xmx6G", "-Xms3G", "-jar", "/minecraft/forge-server.jar", "--universe", "/worlds", "--nogui", "--forceUpgrade", "--eraseCache" ]
 

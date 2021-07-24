@@ -52,10 +52,6 @@ ADD https://media.forgecdn.net/files/3385/660/architectury-1.20.28-forge.jar /mi
 ADD https://media.forgecdn.net/files/3311/352/cloth-config-4.11.26-forge.jar /minecraft/mods/
 ADD https://media.forgecdn.net/files/3237/39/ftb-gui-library-1605.2.1.41-forge.jar /minecraft/mods/
 
-## Install Ex Nihilo: Sequentia
-
-ADD https://media.forgecdn.net/files/3368/257/exnihilosequentia-1.16-20210628182320.jar /minecraft/mods
-
 # ENTRYPOINT [ "bash" ]
 ENTRYPOINT [ "java", "-Xmx6G", "-Xms6G", "-jar", "/minecraft/forge-server.jar", "--universe", "/worlds", "--nogui", "--forceUpgrade", "--eraseCache" ]
 

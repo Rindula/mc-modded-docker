@@ -26,7 +26,7 @@ VOLUME [ "/worlds" ]
 ## Install Create
 
 ADD https://media.forgecdn.net/files/3389/159/flywheel-1.16-0.1.1.jar /minecraft/mods/
-ADD https://media.forgecdn.net/files/3384/222/create-mc1.16.5_v0.3.2a.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3386/319/create-mc1.16.5_v0.3.2b.jar /minecraft/mods/
 
 ## Install Waystones
 

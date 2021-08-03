@@ -34,7 +34,7 @@ ADD https://media.forgecdn.net/files/3332/276/Waystones_1.16.5-7.6.2.jar /minecr
 
 ## Install Refined Storage
 
-ADD https://media.forgecdn.net/files/3351/933/refinedstorage-1.9.13.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3400/575/refinedstorage-1.9.15.jar /minecraft/mods/
 
 ## Install JEI
 

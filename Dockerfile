@@ -42,7 +42,7 @@ ADD https://media.forgecdn.net/files/3383/214/jei-1.16.5-7.7.1.110.jar /minecraf
 
 ## Install Storage Drawers
 
-ADD https://media.forgecdn.net/files/3180/569/StorageDrawers-1.16.3-8.2.2.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3402/515/StorageDrawers-1.16.3-8.3.0.jar /minecraft/mods/
 
 ## Install FTB Utilities and Libraries
 

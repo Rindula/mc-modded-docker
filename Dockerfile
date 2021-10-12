@@ -25,12 +25,12 @@ VOLUME [ "/worlds" ]
 
 ## Install Create
 
-ADD https://media.forgecdn.net/files/3389/159/flywheel-1.16-0.1.1.jar /minecraft/mods/
-ADD https://media.forgecdn.net/files/3386/319/create-mc1.16.5_v0.3.2b.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3459/739/flywheel-1.16-0.2.4.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3419/412/create-mc1.16.5_v0.3.2d.jar /minecraft/mods/
 
 ## Install Waystones
 
-ADD https://media.forgecdn.net/files/3332/276/Waystones_1.16.5-7.6.2.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3440/17/Waystones_1.16.5-7.6.3.jar /minecraft/mods/
 
 ## Install Refined Storage
 
@@ -38,7 +38,7 @@ ADD https://media.forgecdn.net/files/3400/575/refinedstorage-1.9.15.jar /minecra
 
 ## Install JEI
 
-ADD https://media.forgecdn.net/files/3383/214/jei-1.16.5-7.7.1.110.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3488/178/jei-1.16.5-7.7.1.126.jar /minecraft/mods/
 
 ## Install Storage Drawers
 
@@ -46,11 +46,11 @@ ADD https://media.forgecdn.net/files/3402/515/StorageDrawers-1.16.3-8.3.0.jar /m
 
 ## Install FTB Utilities and Libraries
 
-ADD https://media.forgecdn.net/files/3248/884/ftb-chunks-1605.2.3-build.75.jar /minecraft/mods/
-ADD https://media.forgecdn.net/files/3337/104/ftb-ultimine-forge-1605.2.2-build.4.jar /minecraft/mods/
-ADD https://media.forgecdn.net/files/3385/660/architectury-1.20.28-forge.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3482/751/ftb-chunks-forge-1605.3.2-build.65.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3487/876/ftb-ultimine-forge-1605.3.0-build.27.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3462/13/architectury-1.23.33-forge.jar /minecraft/mods/
 ADD https://media.forgecdn.net/files/3311/352/cloth-config-4.11.26-forge.jar /minecraft/mods/
-ADD https://media.forgecdn.net/files/3237/39/ftb-gui-library-1605.2.1.41-forge.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3476/854/ftb-library-forge-1605.3.3-build.74.jar /minecraft/mods/
 
 # ENTRYPOINT [ "bash" ]
 ENTRYPOINT [ "java", "-Xmx6G", "-Xms6G", "-jar", "/minecraft/forge-server.jar", "--universe", "/worlds", "--nogui", "--forceUpgrade", "--eraseCache" ]

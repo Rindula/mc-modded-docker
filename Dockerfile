@@ -47,6 +47,7 @@ ADD https://media.forgecdn.net/files/3402/515/StorageDrawers-1.16.3-8.3.0.jar /m
 ## Install FTB Utilities and Libraries
 
 ADD https://media.forgecdn.net/files/3482/751/ftb-chunks-forge-1605.3.2-build.65.jar /minecraft/mods/
+ADD https://media.forgecdn.net/files/3460/43/ftb-teams-forge-1605.2.2-build.32.jar /minecarft/mods
 ADD https://media.forgecdn.net/files/3487/876/ftb-ultimine-forge-1605.3.0-build.27.jar /minecraft/mods/
 ADD https://media.forgecdn.net/files/3462/13/architectury-1.23.33-forge.jar /minecraft/mods/
 ADD https://media.forgecdn.net/files/3311/352/cloth-config-4.11.26-forge.jar /minecraft/mods/

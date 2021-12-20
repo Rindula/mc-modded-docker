@@ -2,6 +2,7 @@ FROM openjdk:8
 ENV FORGE_VERSION=1.16.5-36.2.0
 
 WORKDIR /minecraft
+RUN chown -R 65534:65534 /minecraft
 USER 65534:65534
 
 # Install Minecraft Server

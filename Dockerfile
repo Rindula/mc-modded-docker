@@ -55,8 +55,8 @@ ADD https://media.forgecdn.net/files/3476/854/ftb-library-forge-1605.3.3-build.7
 
 # User setup
 
-RUN chown -R 65534:65534 /minecraft
-USER 65534:65534
+RUN chown -R 1003:1003 /minecraft
+USER 1003:1003
 
 # ENTRYPOINT [ "bash" ]
 ENTRYPOINT [ "java", "-Xmx6G", "-Xms6G", "-jar", "/minecraft/forge-server.jar", "--universe", "/worlds", "--nogui", "--forceUpgrade", "--eraseCache" ]

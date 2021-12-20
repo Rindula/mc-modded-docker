@@ -2,8 +2,6 @@ FROM openjdk:8
 ENV FORGE_VERSION=1.16.5-36.2.0
 
 WORKDIR /minecraft
-RUN chown -R 65534:65534 /minecraft
-USER 65534:65534
 
 # Install Minecraft Server
 
@@ -54,6 +52,11 @@ ADD https://media.forgecdn.net/files/3487/876/ftb-ultimine-forge-1605.3.0-build.
 ADD https://media.forgecdn.net/files/3462/13/architectury-1.23.33-forge.jar /minecraft/mods/
 ADD https://media.forgecdn.net/files/3311/352/cloth-config-4.11.26-forge.jar /minecraft/mods/
 ADD https://media.forgecdn.net/files/3476/854/ftb-library-forge-1605.3.3-build.74.jar /minecraft/mods/
+
+# User setup
+
+RUN chown -R 65534:65534 /minecraft
+USER 65534:65534
 
 # ENTRYPOINT [ "bash" ]
 ENTRYPOINT [ "java", "-Xmx6G", "-Xms6G", "-jar", "/minecraft/forge-server.jar", "--universe", "/worlds", "--nogui", "--forceUpgrade", "--eraseCache" ]
